@@ -1,0 +1,37 @@
+apply plugin: "com.android.application"
+
+android {
+    compileSdkVersion "android-21"
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 21
+        testInstrumentationRunner "com.android.test.runner.MultiDexTestRunner"
+        //testInstrumentationRunner "android.support.multidex.MultiDexTestRunner"
+        versionCode 1
+        versionName "1.0"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+
+    dexOptions {
+        preDexLibraries false
+        javaMaxHeapSize "2g"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'rootdoc.txt'
+    }
+}
+
+dependencies {
+    compile "com.android.support:multidex:1.0.0"
+    compile "org.scala-lang:scala-library:2.11.5"
+    compile project(":lib1")
+    //androidTestCompile 'com.android.support:multidex-instrumentation:1.0.0'
+
+}
+
