@@ -4,7 +4,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
 sourceCompatibility = 1.6
-group = 'dk.au.cs.thor'
+group = 'dk.au.cs.thor.rti'
 version = '0.1'
 
 buildscript {

@@ -21,8 +21,8 @@ import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.concurrent.Semaphore;
 
-import dk.au.cs.thor.remoteTestInterface.SoloInterface;
-import dk.au.cs.thor.remoteTestInterface.TestInterface;
+import dk.au.cs.thor.rti.rtinterface.SoloInterface;
+import dk.au.cs.thor.rti.rtinterface.TestInterface;
 
 
 public class RemoteActivityTest <T extends android.app.Activity> extends ActivityInstrumentationTestCase2<T> {

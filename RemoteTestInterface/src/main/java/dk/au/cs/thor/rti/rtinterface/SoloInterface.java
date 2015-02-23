@@ -1,4 +1,4 @@
-package dk.au.cs.thor.remoteTestInterface;
+package dk.au.cs.thor.rti.rtinterface;
 
 import android.app.Activity;
 import android.view.View;
