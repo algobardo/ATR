@@ -21,7 +21,7 @@ import com.robotium.solo.WebElement;
 
 import java.util.ArrayList;
 
-import dk.au.cs.thor.remoteTestInterface.SoloInterface;
+import dk.au.cs.thor.rti.rtinterface.SoloInterface;
 
 public class SoloProxy implements SoloInterface {
 
